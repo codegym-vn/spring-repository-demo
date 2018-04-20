@@ -24,7 +24,7 @@
         <c:forEach var="product" items="${products}">
             <tr>
                 <td>${product.getId()}</td>
-                <td>${product.getName()}</td>
+                <td><a href="/view?id=${product.getId()}"> ${product.getName()}</a></td>
                 <td>${product.getPrice()}</td>
             </tr>
         </c:forEach>
